@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>LSMusic</title>
+
+		<meta name="author" content="Itziar Sanchez">
+		<meta name="description" content="Practica Hipermedia">
+
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="css/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/css/font-awesome.css">
+
+		<!-- JS -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+	</head>
+
+	<body style="width: 100%">
+
+	<header>
+		<div class="container-fluid">
+			<div class="row" style="background-image: -webkit-linear-gradient(top, #3c3c3c, #2c2c2c);">
+				<div class=" hidden-xs col-lg-2 text-center" style="height:65px;">
+					<img id="logo" src="imag/logo.png" alt="LSMusic">
+				</div>
+
+				<div class="col-xs-12 col-lg-10 text-center">
+					<div class="input-group buscadorHeader" >
+							<input type="text" class="form-control" id="infoSearch" name="searchEngine" placeholder="Search for an album, artist or track">
+						<span class="input-group-btn">
+							<button id="searchbtn" class="btn btn-default" type="button">Search</button>
+						</span>
+					</div>
+
+					<div id="radioButton" class="col-xs-2 col-lg-2">
+						<div class="input-group">
+							<span class="input-group-addon">
+								<input id="trackSelected" type="radio" name="radioButton" value="track" checked>Track
+								<input id="artistSelected" type="radio" name="radioButton" value="artist">Artist
+								<input id="albumSelected" type="radio" name="radioButton" value="album">Album
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="contenido">
+		<div id="searchSection">
+				<div id="list">
+					<h3>Most Popular results</h3>
+				</div>
+		</div>
+
+		<div id="suggestionSection">
+				<div class="suggestionHeader">
+					<h3>Suggestions</h3>
+				</div>
+				<div id="listaRecom">No suggestions</div><br>
+		</div>
+
+		<div id="reproductor">
+			<h3>Music Player</h3>
+				<div  id="image"><img src="imag/noimage.jpg"></div>
+				<audio autoplay=true id="musicPlayer" src="" controls></audio>
+				<span class="col-xs-6 col-md-4 text-center" id="info"></span>
+				<span class="col-xs-6 col-md-4 text-center" id="listTrack"></span>
+		</div>
+	</div>
+
+	<script src="js/main.js"></script>
+	</body>
+</html>
+
+
+

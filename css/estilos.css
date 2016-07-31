@@ -1,0 +1,321 @@
+
+body{
+	background-image: url("../imag/fondo.jpg");
+}
+
+/* Cabecera */
+
+#logo{
+	height: 90px;
+	width: 110px;
+	margin-top: 10px;
+	margin-right: 50px;
+}
+
+.buscadorHeader{
+	min-width:200px; max-width:1150px; margin-top:25px;
+}
+
+#radioButton{
+	margin: 10px;
+	margin-left: 0px;
+}
+
+/* Body */
+
+#contenido{
+	padding-left: 300px;
+	padding-right: 300px;
+	height: auto;
+}
+
+/* Search section */
+
+.img-responsive{
+	width: 200px;
+	height: 200px;
+}
+
+#searchSection{
+	clear:both;
+}
+[id^=trackname]{
+	width:200px;
+}
+
+/* Suggestion section */
+
+#suggestionSection{
+	clear:both;
+}
+#listaRecom img{
+
+	height: 200px;
+	width: 200px;
+}
+
+/* Music Player section */
+
+#reproductor{
+	overflow:auto;
+	background-image: -webkit-linear-gradient(top, #3c3c3c, #2c2c2c);
+	position: relative;
+	height: auto;
+	width:100%;
+	padding: 50px;
+	padding-top: 10px;
+	margin-bottom: 100px;
+	color: white;
+	font-size: large;
+}
+#image{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	clear:right;
+}
+
+#image img{
+	width: 300px;
+	height: 300px;
+}
+
+#musicPlayer {
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+#info{
+	position: relative;
+	bottom: 290px;
+	left: 30px;
+	width: 270px;
+	float: left;
+	text-align: left;
+}
+
+#listTrack{
+	position: relative;
+	left: 100px;
+	bottom: 300px;
+	width: 500px;
+	float:left;
+	text-align: left;
+	background-color: grey;
+
+}
+[id^=listTrack]{
+	float: right;
+	display: inline;
+}
+th, td {
+	padding: 10px;
+	text-align: left;
+}
+
+/* Footer */
+
+footer{
+	background-image: -webkit-linear-gradient(top, #3c3c3c, #2c2c2c);
+	color: white;
+	position: relative;
+	height: 100px;
+}
+
+/* Carátulas de los discos */
+
+.hovereffect {
+	float: left;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	cursor: default;
+	margin:20px;
+}
+
+.hovereffect .overlay {
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+
+.hovereffect img {
+	display: block;
+	position: relative;
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+	-webkit-transition: all 0.35s;
+	transition: all 0.35s;
+	filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.7" /><feFuncG type="linear" slope="0.7" /><feFuncB type="linear" slope="0.7" /></feComponentTransfer></filter></svg>#filter');
+	filter: brightness(0.5);
+	-webkit-filter: brightness(0.5);
+}
+
+.hovereffect:hover img {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.7" /><feFuncG type="linear" slope="0.7" /><feFuncB type="linear" slope="0.7" /></feComponentTransfer></filter></svg>#filter');
+	filter: brightness(0.7);
+	-webkit-filter: brightness(0.7);
+}
+
+.hovereffect h2 {
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	font-size: 17px;
+	padding: 10px;
+}
+
+.hovereffect:hover h2 {
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
+	transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
+}
+
+.hovereffect a.info {
+	display: inline-block;
+	text-decoration: none;
+	padding: 7px 14px;
+	text-transform: uppercase;
+	color: #fff;
+	border: 1px solid #fff;
+	margin: 50px 0 0 0;
+	background-color: transparent;
+}
+
+.hovereffect a.info:hover {
+	box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect hr {
+	width: 40%;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	border: 1px solid #FFF;
+}
+
+.hovereffect  hr:nth-child(3) {
+	-webkit-transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,90deg) scale3d(0,0,1);
+	transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,90deg) scale3d(0,0,1);
+}
+
+.hovereffect  hr:nth-child(4) {
+	-webkit-transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,180deg) scale3d(0,0,1);
+	transform: translate3d(-50%,-50%,0) rotate3d(0,0,1, 180deg) scale3d(0,0,1);
+}
+
+.hovereffect h2, .hovereffect hr {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	-webkit-transform-origin: 50%;
+	-ms-transform-origin: 50%;
+	transform-origin: 50%;
+	background-color: transparent;
+	margin: 0px;
+}
+
+.set1, .set2 {
+	left: 50%;
+	position: absolute;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	-webkit-transform-origin: 50%;
+	-ms-transform-origin: 50%;
+	transform-origin: 50%;
+	background-color: transparent;
+	margin: 0px;
+	padding: 0px;
+}
+
+.set1 {
+	top: 40%;
+}
+
+.set2 {
+	top: 60%;
+}
+
+.hovereffect p {
+	width: 30%;
+	text-transform: none;
+	font-size: 15px;
+	line-height: 2;
+}
+
+.hovereffect p a {
+	color: #fff;
+}
+
+.hovereffect p a:hover,
+.hovereffect p a:focus {
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+
+.hovereffect  a i {
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	padding: 10px;
+	font-size: 20px;
+}
+
+.set1 a:first-child i {
+	-webkit-transform: translate3d(-60px,-60px,0);
+	transform: translate3d(-60px,-60px,0);
+}
+
+.set1 a:nth-child(2) i {
+	-webkit-transform: translate3d(60px,-60px,0);
+	transform: translate3d(60px,-60px,0);
+}
+
+.set2 a:first-child i {
+	-webkit-transform: translate3d(-60px,60px,0);
+	transform: translate3d(-60px,60px,0);
+}
+
+.set2 a:nth-child(2) i {
+	-webkit-transform: translate3d(60px,60px,0);
+	transform: translate3d(60px,60px,0);
+}
+
+.hovereffect:hover hr:nth-child(3) {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-webkit-transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-180deg) scale3d(1,1,1);
+	transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-180deg) scale3d(1,1,1);
+}
+
+.hovereffect:hover hr:nth-child(4) {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-webkit-transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-900deg) scale3d(1,1,1);
+	transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-90deg) scale3d(1,1,1);
+}
+
+.hovereffect:hover .set1 i:empty, .hovereffect:hover .set2 i:empty {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+
