@@ -1,7 +1,7 @@
 # lsmusic
 LSMusic es una aplicación web musical. La página presenta las siguientes funcionalidades:
 
-	Buscar canciones, albums o artistas
+1. Buscar canciones, albums o artistas
 2. Reproducir canciones
 3. Añadir canciones a la lista de reproducciones del usuario
 4. Sugerir canciones de artistas relacionados con el artista buscado por el usuario
